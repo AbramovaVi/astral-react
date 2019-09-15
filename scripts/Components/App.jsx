@@ -17,10 +17,11 @@ class App extends Component {
     render() {
         const {msg} = this.state;
         const {list} = this.state;
+        const {count} = this.state;
         return (
             <>
                 <h1>Counter</h1>
-                <Counter msg={msg} count={this.state.count}/>
+                <Counter msg={msg} count={count}/>
                 <List list={list}/>
             </>
         )

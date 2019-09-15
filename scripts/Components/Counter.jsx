@@ -33,13 +33,16 @@ class Counter extends Component {
 
     render() {
         const  {msg}  = this.props;
+        const onIncrease = this.onIncrease;
+        const onDecrease = this.onDecrease;
+        const onReset = this.onReset;
         return (
             <>
                 <h4>{ msg }</h4>
                 <h2>{this.state.count}</h2>
-                <button onClick={this.onIncrease}>increase</button>
-                <button onClick={this.onDecrease}>decrease</button>
-                <button onClick={ this.onReset}>reset</button>
+                <button onClick={ onIncrease }>increase</button>
+                <button onClick={ onDecrease }>decrease</button>
+                <button onClick={ onReset }>reset</button>
             </>
         )
     }

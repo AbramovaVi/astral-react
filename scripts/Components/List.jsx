@@ -10,16 +10,11 @@ class List extends Component {
 
     }
 
-
     render() {
     const {elementList} = this.state;
-    console.log(elementList.list);
         return (
             <ul>
-                { elementList.list.map(function(item,index) {
-                    return (<li key={index}>{item.name}</li>)
-                    })
-                }
+                { elementList.list.map((item,index) => {return (<li key={index}>{item.name}</li>)}) }
             </ul>
         )
     }
