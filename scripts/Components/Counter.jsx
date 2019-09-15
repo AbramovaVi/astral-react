@@ -5,7 +5,7 @@ class Counter extends Component {
         super(props);
 
         this.state = {
-            count: this.props.count
+            count: props.count
         };
 
         this.onIncrease = this.onIncrease.bind(this);

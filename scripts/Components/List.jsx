@@ -5,7 +5,7 @@ class List extends Component {
         super(props);
 
         this.state = {
-            elementList: this.props
+            elementList: props
         }
 
     }
