@@ -24,9 +24,6 @@
     "build": "webpack --mode=development --watch",
     "start:dev": "webpack-dev-server"
   },
-  "browserslist": [
-    "last 2 version"
-  ],
   "keywords": [],
   "author": "",
   "license": "ISC"
